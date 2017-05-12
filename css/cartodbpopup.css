@@ -1,0 +1,59 @@
+div.cartodb-popup.stories{
+	width:417px;padding-top:5px;margin-left:-197px;
+	background:url("http://vizzuality.github.io/icij/img/map/infowindow-top.png") no-repeat}
+div.cartodb-popup.stories div.cartodb-popup-content-wrapper{
+	width:407px;max-width:407px;padding:0 5px;
+	background:url("http://vizzuality.github.io/icij/img/map/infowindow-content.png") repeat-y}
+div.cartodb-popup.stories div.cartodb-popup-tip-container{
+	width:417px;
+	background:url("http://vizzuality.github.io/icij/img/map/infowindow-bottom.png") no-repeat}
+
+div.cartodb-popup.stories div.row{
+	display:block;overflow:auto}
+div.cartodb-popup.stories div.row div.label,div.cartodb-popup.stories div.row div.info{
+	padding:20px 0;margin:0 20px}
+div.cartodb-popup.stories div.row div.label{
+	float:left;width:60px}
+div.cartodb-popup.stories div.row div.info{
+	float:right;width:267px}
+div.cartodb-popup.stories div.row div.info.border{
+	border-bottom:1px solid #E1E2E4}
+div.cartodb-popup.stories div.row.no-pad div.info,div.cartodb-popup.stories div.row.no-pad div.label{
+	padding-top:0}
+div.cartodb-popup.stories a.cartodb-popup-close-button{
+	display:-moz-inline-stack;
+	display:inline-block;
+	vertical-align:middle;
+	*vertical-align:auto;
+	zoom:1;
+	*display:inline;
+	top:10px;right:
+	10px;width:20px !important;
+	height:auto !important;
+	padding:5px 0;
+	text-align:center;background:0;
+	text-indent:0;
+	font:bold 11px "Helvetica",Arial;
+	text-decoration:none
+}
+	div.cartodb-popup.stories a.cartodb-popup-close-button:hover{
+		text-decoration:underline}
+	div.cartodb-popup.stories label{
+		display:block;margin-top:2px;font:bold 11px "Helvetica",Arial;line-height:12px;color:#4CA7CC}
+	div.cartodb-popup.stories img{
+		max-width:180px !important}
+	div.cartodb-popup.stories p{
+		display:block;max-width:none !important;width:auto !important;font-family:"Georgia","Courier New",Arial;font-size:14px;color:#999999}
+	div.cartodb-popup.stories p strong{font-weight:bold}
+	div.cartodb-popup.stories p.margin{
+		margin-top:12px}
+	div.cartodb-popup.stories p a{c
+		olor:#459CBE;text-decoration:none}
+	div.cartodb-popup.stories p a:hover{
+		text-decoration:underline}
+	div.cartodb-popup.stories a.more{
+		font:bold 13px "Helvetica",Arial;color:#333C47;text-decoration:none}
+	div.cartodb-popup.stories a.more:hover{
+		text-decoration:underline}
+	div.cartodb-popup.stories i.doc_icon{
+		display:-moz-inline-stack;display:inline-block;vertical-align:middle;*vertical-align:auto;zoom:1;*display:inline;width:28px;height:32px;background:url("http://vizzuality.github.io/icij/img/map/doc-icon.png") no-repeat}

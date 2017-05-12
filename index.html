@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--Edit the title of the page-->
+    <title>Visor HistoricOSM</title>
+    <meta name="description" content="Visor cartográfico creado con CartoDB para la visualización de los datos de patrimonio histórico existentes en OpenStreetMap">
+    <meta name="author" content="Patricio Soriano">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/light-theme.css">
+    <link rel="stylesheet" href="css/makeitresponsive.css">
+    <link rel="stylesheet" href="css/historicoms.css">
+
+	
+  </head>
+  <body>
+
+    <div class="map" id="map"></div>
+
+    
+    <div id="layer_selector" class="cartodb-infobox">
+      <ul>
+        
+        <li id="peninsula">PI</li>
+        <li id="canarias">IC</li>
+      </ul>
+    </div>
+	
+    <div class="sidepanel">
+      <div class="wrapper">
+        <div class="context subheader">
+          <p>Creado por <a href="http://sigdeletras.com/" target="_blank">Patricio Soriano - SIGdeletras.com</a></p>
+
+        </div>
+        <h1>Visor HistoricOSM</h1>
+   
+        <p><i>Fecha de actualización: 26/04/2014</i></h1>
+        
+         
+        <h3>Descripción</h3>
+      
+      	<p>El siguiente visor es uno de los resultados de un proyecto de análisis de la información geográfica de tipo patrimonial disponible <a href="http://www.openstreetmap.org/"><strong>OpenStreetMap</strong></a> bajo la clave <a href="http://wiki.openstreetmap.org/wiki/Key:historic"><strong>Historic</strong></a>.</p>
+	<p>Con este trabajo se pretende examinar las posibilidades de uso por parte de particulares, administraciones o empresas que estén interesados, gestionen o quieran desarrollar proyectos patrimoniales basados en los datos de OpenStreetMap.</p>
+	<p>De igual modo, esperamos que la presentación de estos resultados <strong>facilite la colaboración de más usuarios </strong>con el objetivo de mejorar el volumen y calidad de la información existente. Como ejemplo  participativo sirvan los trabajos mejora de información geográfica sobre los Bienes de Interés Cultural de <a href="http://wiki.openstreetmap.org/wiki/ES:Bienes_de_Inter%C3%A9s_Cultural_en_Canarias" target="_blank">Canarias</a> o <a href="http://wiki.openstreetmap.org/wiki/ES:Bienes_de_Inter%C3%A9s_Cultural_de_C%C3%B3rdoba" target="_blank">Córdoba</a></p>
+	<p>Los datos, generados por los colaborados de OpenStreetMap, han sido almacenados para su presentación en <a href="http://cartodb.com/">CartoDB</a> y se encuentran bajo licencia <a href="http://www.openstreetmap.org/copyright">CC-BY-SA y ODbL</a>. Pueden ser descargadosen distintos formatos (csv, geojson, kml o shape o svg) desde este <a href="http://sigdeletras.cartodb.com/tables/historicosm/public" target="_blank">enlace</a>.</p>
+	<p>Para más información del proyecto se puede consultar la web <a href="http://sigdeletras.com/">sigdeletras.com</a>,  o bien el correspondiente repositorio en <a href="https://github.com/pasoriano/visor-historicosm">GitHub</a>.</p>
+
+        <h3>Uso</h3>
+        
+	<p>Para <strong>desplazarse </strong>por el visor sólo hay que pinchar en la pantalla y desplazar el ratón. Pueden usarse <strong>cotrol de zoom </strong>para aumentar o disminuir la escala de visualización. La botonera con las iniciales "PI|IC" permite igualmente centrar la vista en la Península Ibérica o en las Islas Canarias.</p>
+	<p>Se ha incluido una <strong>herramienta de búsqueda básica</strong>, para centrar la vista por ejemplo por municipio (Ej. Córdoba, España o Burgos).</p>
+
+	<h3>Consultas</h3>
+
+	<p>La información asociada a cada punto es: denominacion (name), siempre que este exista en OMS, el tipo valor de la clave <i>historic</i> como por ejemplo "monument" y el municipio y provincia por localización espacial automática utilizando la capa de límites administrativos de la web <a href="http://www.gadm.org/" target="_blank"><i>Global Administrative Areas</i></a>.</p>
+
+	<p>Para finalizar se ha incluido un enlace a OpenStreetMap según el <i>id </i>del elemento y una búsqueda general de contenidos según el nombre y el municipio en Wikipedia y Flickr</p>
+	
+	<h3>Herramientas</h3>
+	<p>Se ha utilizado <a href"http://overpass-turbo.eu/" target="_blank">OverPass Turbo</a> para la descarga de los datos. La transformación, tratamiento y análisis se ha realizado con pequeños <i>scripts</i> utilizando librerías  como <a href="http://www.gdal.org/ogr2ogr.html">ogr2ogr</a> o  tecnologías de la información geográfica como <a href="http://qgis.org/es/site/">QGIS</a> y <a href="http://postgis.net/">PostGIS</a>.</p>
+
+
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&v=3.8"></script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+  
+    <script src="js/historicosm.js"></script>
+    
+
+
+  </body>
+      </html>
